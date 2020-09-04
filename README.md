@@ -6,7 +6,7 @@ so at first sorry for my bad english :)))
 so ofcourse you need python3 and pygame which you can install with this command easily:<br>
     <code>
     $ sudo apt install python3-pygame 
-    </code>
+    </code><br>
 this is simple program with 4 python file:<br>
     <ul>
         <li> main.py -> execute the game </li>
