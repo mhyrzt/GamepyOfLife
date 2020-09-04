@@ -1,5 +1,5 @@
 # GamepyOfLife
-Conway Game of Life visualized with pygame
+<h4>Conway Game of Life visualized with pygame</h4>
 <br>
 so at first sorry for my bad english :)))
 <br>
