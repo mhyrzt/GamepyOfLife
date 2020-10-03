@@ -13,9 +13,8 @@ while True:
             pygame.quit()
     for row in pg.getCells():
         for cell in row:
-            data  = cell.printData()
-            color = data[0]
-            rect  = data[1]
+            color = cell.getColor()
+            rect  = cell.rectData()
             pygame.draw.rect(screen, color, rect)
     pg.nextGen()
     pygame.display.update()

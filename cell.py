@@ -5,7 +5,6 @@ class Cell:
         self.live = False # False -> Dead , True -> Alive
         self.pos  = pos
         self.playGround = pg
-        self.neighbores = []
         self.color      = COLOR_BLACK
         
     def setPos(self, pos):

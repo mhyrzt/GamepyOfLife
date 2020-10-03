@@ -31,21 +31,10 @@ class PlayGround:
                 
                 kill = self.cells[i][j].getLive() and (aliveNeighbors < 2 or aliveNeighbors > 3)
                 born = not self.cells[i][j].getLive() and aliveNeighbors == 3
-                if kill:
-                    newGen[i][j].toggleLive()
-                elif born:
+                if kill or born:
                     newGen[i][j].toggleLive()
         
         self.cells = newGen
-
-    def printTable(self):
-        table = []
-        for r in self.cells:
-            temp = []
-            for c in r:
-                temp += [[c.getLive(), c.getPos()]]
-            table += [temp]
-        return table
 
     def setCells(self):
         for i in range(0, len(self.cells)):
